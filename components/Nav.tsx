@@ -13,15 +13,15 @@ export function Nav() {
       </Link>
 
       <nav className="flex items-center gap-6 text-sm text-neutral-400">
-        <a href="#projects" className="transition hover:text-neutral-100">
+        <Link href="/#projects" className="transition hover:text-neutral-100">
           Projects
-        </a>
-        <a href="#experience" className="transition hover:text-neutral-100">
-          Experience
-        </a>
-        <a href="#contact" className="transition hover:text-neutral-100">
+        </Link>
+        <Link href="/about" className="transition hover:text-neutral-100">
+          About
+        </Link>
+        <Link href="/contact" className="transition hover:text-neutral-100">
           Contact
-        </a>
+        </Link>
       </nav>
     </header>
   );
