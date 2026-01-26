@@ -12,20 +12,20 @@ export default function ContactPage() {
           <h1 className="text-2xl font-semibold tracking-tight text-neutral-50">
             Contact
           </h1>
-          <p className="max-w-2xl text-sm leading-relaxed text-neutral-300">
-            If you have something concrete in mind—governed AI workflows, automation
-            under real constraints, or refactoring chaotic operations into something
-            testable—send a short message with real details.
-          </p>
-          <p className="text-sm text-neutral-300">
-            Email:{" "}
-            <a
-              href="mailto:leo@bbstrats.com"
-              className="underline underline-offset-4 hover:text-neutral-100"
-            >
-              leo@bbstrats.com
-            </a>
-          </p>
+          <div className="text-sm text-neutral-300">
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:leo@bbstrats.com"
+                className="underline underline-offset-4 hover:text-neutral-100"
+              >
+                leo@bbstrats.com
+              </a>
+            </p>
+            <p className="mt-2 text-xs text-neutral-500">
+              I read everything. Replies may be slow.
+            </p>
+          </div>
         </section>
       </main>
     </Layout>
