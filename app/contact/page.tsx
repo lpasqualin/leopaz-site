@@ -20,10 +20,10 @@ export default function ContactPage() {
           <p className="text-sm text-neutral-300">
             Email:{" "}
             <a
-              href="mailto:you@leopaz.dev"
+              href="mailto:leo@bbstrats.com"
               className="underline underline-offset-4 hover:text-neutral-100"
             >
-              you@leopaz.dev
+              leo@bbstrats.com
             </a>
           </p>
         </section>

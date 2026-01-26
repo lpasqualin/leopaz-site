@@ -150,14 +150,11 @@ export default function HomePage() {
             <div>
               Email:{" "}
               <a
-                href="mailto:you@leopaz.dev"
+                href="mailto:leo@bbstrats.com"
                 className="underline underline-offset-4 hover:text-neutral-100"
               >
-                you@leopaz.dev
+                leo@bbstrats.com
               </a>
-            </div>
-            <div className="mt-1 text-xs text-neutral-500">
-              Replace with whatever address / alias you actually want public.
             </div>
           </div>
 
