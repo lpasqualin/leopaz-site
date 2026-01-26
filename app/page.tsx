@@ -53,7 +53,7 @@ export default function HomePage() {
               id="projects-heading"
               className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400"
             >
-              Projects
+              Systems & Artifacts
             </h2>
             <p className="max-w-2xl text-sm text-neutral-400">
               These artifacts are working documents: playbooks, diagnostic tools, and guardrails used to design and evaluate complex systems.
