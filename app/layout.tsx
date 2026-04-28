@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Leo Paz",
+  title: "Leonardo Pasqualin",
   description: "Systems, AI, and governance without the guru bullshit.",
 };
 
