@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Leonardo Pasqualin",
-  description: "Systems, AI, and governance without the guru bullshit.",
+  description: "CRM cleanup, workflow automation, and operations support for service businesses.",
 };
 
 export default function RootLayout({
