@@ -19,16 +19,19 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg font-medium leading-relaxed text-neutral-200">
-            Fix broken CRM, intake, and follow-up systems that leak revenue.
+            I help owner-led businesses get their operational systems under control.
           </p>
 
           <div className="space-y-3 text-sm leading-relaxed text-neutral-300">
             <p>
-              CRM cleanup, intake routing, and follow-up systems for sales-driven service businesses.
+              CRM, intake, follow-up, and communication workflows — with automation where it actually makes sense.
+            </p>
+            <p className="font-medium text-neutral-200">
+              Fix broken CRM, intake, and follow-up systems that leak revenue.
             </p>
             <p>
               If your inbox is overloaded, your CRM is a mess, or things are
-              slipping through the cracks, I help you clean it up and make it run properly.
+              slipping through the cracks, I help you clean it up, make it run properly, and automate the parts that should not be manual.
             </p>
           </div>
 
@@ -91,7 +94,7 @@ export default function HomePage() {
               </li>
               <li className="flex gap-3">
                 <span className="shrink-0 text-neutral-600">–</span>
-                <span>Reduce manual workload through practical automation</span>
+                <span>Implement workflow automation once the system is stable</span>
               </li>
             </ul>
 
