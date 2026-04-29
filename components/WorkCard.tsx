@@ -50,7 +50,19 @@ export function WorkCard({ item, featured = false }: WorkCardProps) {
 
       {/* Footer */}
       <div className="pt-1">
-        {isSystem ? (
+        {isSystem && item.githubUrl ? (
+          <a
+            href={item.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-neutral-600 transition hover:text-neutral-400"
+          >
+            Git Repo
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" className="opacity-50">
+              <path d="M2 8L8 2M8 2H4M8 2V6" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        ) : isSystem ? (
           <span className="font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-neutral-600">
             Standalone product
           </span>

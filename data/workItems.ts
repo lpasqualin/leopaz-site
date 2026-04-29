@@ -10,6 +10,7 @@ export type WorkItem = {
   href: string;
   kind: WorkItemKind;
   featured?: boolean;
+  githubUrl?: string;
 };
 
 export const workItems: WorkItem[] = [
@@ -54,6 +55,7 @@ export const workItems: WorkItem[] = [
     href: "#",
     kind: "system",
     featured: true,
+    githubUrl: "https://github.com/lpasqualin/siftwise",
   },
   {
     id: "governed-sop",
