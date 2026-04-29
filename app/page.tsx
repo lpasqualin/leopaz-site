@@ -19,13 +19,12 @@ export default function HomePage() {
           </h1>
 
           <p className="text-lg font-medium leading-relaxed text-neutral-200">
-            I fix messy operations and automate the work that slows you down.
+            Fix broken CRM, intake, and follow-up systems that leak revenue.
           </p>
 
           <div className="space-y-3 text-sm leading-relaxed text-neutral-300">
             <p>
-              CRM cleanup, intake routing, follow-up systems, and workflow automation
-              for service businesses.
+              CRM cleanup, intake routing, and follow-up systems for sales-driven service businesses.
             </p>
             <p>
               If your inbox is overloaded, your CRM is a mess, or things are
@@ -33,12 +32,31 @@ export default function HomePage() {
             </p>
           </div>
 
+          <ul className="space-y-2 text-sm leading-relaxed text-neutral-400">
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>Reduced CRM update time by ~50% by restructuring workflows and data handling</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>Rebuilt CRM with ~7,000 records and clean segmentation</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>Built intake → routing → follow-up system handling ~25,000 contacts</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>Managed high-volume workflows across 100+ accounts without breakdowns</span>
+            </li>
+          </ul>
+
           <div className="pt-2">
             <a
               href="mailto:leo@bbstrats.com"
               className="inline-block rounded-lg bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-900 shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_1px_3px_rgba(0,0,0,0.4)] transition hover:bg-neutral-200 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.15),0_2px_8px_rgba(0,0,0,0.5)]"
             >
-              Send me your workflow
+              Book a workflow review
             </a>
           </div>
         </section>
@@ -54,7 +72,7 @@ export default function HomePage() {
 
           <div className="space-y-4 text-sm leading-relaxed text-neutral-300">
             <p>
-              I work with small and mid-sized businesses to clean up the operational
+              I work with owner-led, sales-driven businesses to clean up the operational
               systems that create missed follow-ups, duplicated work, bad data, and slow execution.
             </p>
 
@@ -143,8 +161,7 @@ export default function HomePage() {
             </ul>
 
             <p className="mt-4 border-t border-neutral-800 pt-3.5 text-sm leading-relaxed text-neutral-300">
-              Result: the owner was removed from day-to-day operations while communication,
-              follow-up, and execution stayed consistent.
+              Result: the owner stepped out of daily operations while inbox, follow-ups, and execution continued without dropped tasks.
             </p>
           </div>
         </section>
@@ -172,6 +189,35 @@ export default function HomePage() {
               Simple systems. Clear ownership. Reliable execution.
             </p>
           </div>
+        </section>
+
+        {/* What I Don't Do */}
+        <section aria-labelledby="what-i-dont-do-heading" className="space-y-4">
+          <h2
+            id="what-i-dont-do-heading"
+            className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
+          >
+            What I Don&apos;t Do
+          </h2>
+
+          <ul className="space-y-2 text-sm leading-relaxed text-neutral-400">
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>I don&apos;t build custom software from scratch</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>I don&apos;t add tools before fixing the system</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>I don&apos;t manage ongoing operations or teams</span>
+            </li>
+            <li className="flex gap-3">
+              <span className="shrink-0 text-neutral-600">–</span>
+              <span>I don&apos;t take on projects without clear ownership</span>
+            </li>
+          </ul>
         </section>
 
         {/* Contact */}
