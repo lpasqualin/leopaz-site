@@ -44,7 +44,7 @@ export default function HomePage() {
         </section>
 
         {/* What I Do */}
-        <section id="work" aria-labelledby="work-heading" className="space-y-4">
+        <section id="what-i-do" aria-labelledby="work-heading" className="space-y-4">
           <h2
             id="work-heading"
             className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
@@ -150,7 +150,7 @@ export default function HomePage() {
         </section>
 
         {/* About */}
-        <section id="about" aria-labelledby="about-heading" className="space-y-4">
+        <section id="about-section" aria-labelledby="about-heading" className="space-y-4">
           <h2
             id="about-heading"
             className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
@@ -175,7 +175,7 @@ export default function HomePage() {
         </section>
 
         {/* Contact */}
-        <section id="contact" aria-labelledby="contact-heading" className="space-y-3">
+        <section id="contact-section" aria-labelledby="contact-heading" className="space-y-3">
           <h2
             id="contact-heading"
             className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
