@@ -9,7 +9,7 @@ type LayoutProps = {
 export function Layout({ children }: LayoutProps) {
   return (
     <div className="relative min-h-screen bg-neutral-950 text-neutral-100">
-      {/* Fixed background gradients (subtle, stay put while scrolling) */}
+      {/* Fixed background gradients */}
       <div
         className="pointer-events-none fixed inset-0 z-0 overflow-hidden"
         aria-hidden="true"
@@ -17,18 +17,18 @@ export function Layout({ children }: LayoutProps) {
         {/* Bottom-left glow */}
         <div
           className="absolute left-[-6rem] bottom-[-6rem] h-[18rem] w-[32rem] -rotate-10
-                     bg-gradient-to-tr from-emerald-400/30 via-emerald-500/12 to-transparent blur-3xl"
+                     bg-gradient-to-tr from-emerald-400/50 via-emerald-500/20 to-transparent blur-3xl"
         />
 
         {/* Top-right glow */}
         <div
           className="absolute right-[-4rem] top-[-8rem] h-[16rem] w-[28rem] rotate-6
-                     bg-gradient-to-bl from-sky-400/26 via-sky-500/10 to-transparent blur-3xl"
+                     bg-gradient-to-bl from-sky-400/45 via-sky-500/18 to-transparent blur-3xl"
         />
       </div>
 
       {/* Content (above gradients) */}
-      <div className="relative z-10 mx-auto max-w-4xl px-4 pb-16 pt-8 sm:px-6 lg:px-0">
+      <div className="relative z-10 mx-auto max-w-4xl px-12 pb-16 pt-8">
         {children}
       </div>
     </div>

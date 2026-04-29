@@ -18,11 +18,11 @@ export default function HomePage() {
             Leo Pasqualin
           </h1>
 
-          <p className="max-w-2xl text-lg font-medium leading-relaxed text-neutral-200">
+          <p className="text-lg font-medium leading-relaxed text-neutral-200">
             I fix messy operations and automate the work that slows you down.
           </p>
 
-          <div className="max-w-2xl space-y-3 text-sm leading-relaxed text-neutral-300">
+          <div className="space-y-3 text-sm leading-relaxed text-neutral-300">
             <p>
               CRM cleanup, intake routing, follow-up systems, and workflow automation
               for service businesses.
@@ -36,7 +36,7 @@ export default function HomePage() {
           <div className="pt-2">
             <a
               href="mailto:leo@bbstrats.com"
-              className="inline-block rounded-lg bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-900 transition hover:bg-neutral-200"
+              className="inline-block rounded-lg bg-neutral-100 px-4 py-2 text-sm font-medium text-neutral-900 shadow-[0_0_0_1px_rgba(255,255,255,0.08),0_1px_3px_rgba(0,0,0,0.4)] transition hover:bg-neutral-200 hover:shadow-[0_0_0_1px_rgba(255,255,255,0.15),0_2px_8px_rgba(0,0,0,0.5)]"
             >
               Send me your workflow
             </a>
@@ -47,22 +47,34 @@ export default function HomePage() {
         <section id="work" aria-labelledby="work-heading" className="space-y-4">
           <h2
             id="work-heading"
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400"
+            className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
           >
             What I Do
           </h2>
 
-          <div className="max-w-2xl space-y-3 text-sm leading-relaxed text-neutral-300">
+          <div className="space-y-4 text-sm leading-relaxed text-neutral-300">
             <p>
               I work with small and mid-sized businesses to clean up the operational
               systems that create missed follow-ups, duplicated work, bad data, and slow execution.
             </p>
 
-            <ul className="list-inside space-y-1 text-neutral-400">
-              <li>– Clean up CRM data and structure</li>
-              <li>– Fix broken intake and communication workflows</li>
-              <li>– Build routing and follow-up systems</li>
-              <li>– Reduce manual workload through practical automation</li>
+            <ul className="space-y-2 text-neutral-400">
+              <li className="flex gap-3">
+                <span className="shrink-0 text-neutral-600">–</span>
+                <span>Clean up CRM data and structure</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0 text-neutral-600">–</span>
+                <span>Fix broken intake and communication workflows</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0 text-neutral-600">–</span>
+                <span>Build routing and follow-up systems</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="shrink-0 text-neutral-600">–</span>
+                <span>Reduce manual workload through practical automation</span>
+              </li>
             </ul>
 
             <p>
@@ -76,32 +88,28 @@ export default function HomePage() {
         <section aria-labelledby="process-heading" className="space-y-4">
           <h2
             id="process-heading"
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400"
+            className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
           >
             How It Works
           </h2>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="rounded-xl border border-neutral-800 bg-neutral-950/60 p-4">
-              <h3 className="text-sm font-semibold text-neutral-100">1. Review</h3>
-              <p className="mt-2 text-sm leading-relaxed text-neutral-400">
-                I look at your current setup: CRM, inbox, workflows, tools, and handoffs.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-neutral-800 bg-neutral-950/60 p-4">
-              <h3 className="text-sm font-semibold text-neutral-100">2. Fix</h3>
-              <p className="mt-2 text-sm leading-relaxed text-neutral-400">
-                We clean up the system: data, structure, communication flow, and responsibilities.
-              </p>
-            </div>
-
-            <div className="rounded-xl border border-neutral-800 bg-neutral-950/60 p-4">
-              <h3 className="text-sm font-semibold text-neutral-100">3. Automate</h3>
-              <p className="mt-2 text-sm leading-relaxed text-neutral-400">
-                Once the foundation is stable, we automate the parts that actually make sense.
-              </p>
-            </div>
+          <div className="grid gap-3 md:grid-cols-3">
+            {[
+              { n: "1", title: "Review", body: "I look at your current setup: CRM, inbox, workflows, tools, and handoffs." },
+              { n: "2", title: "Fix", body: "We clean up the system: data, structure, communication flow, and responsibilities." },
+              { n: "3", title: "Automate", body: "Once the foundation is stable, we automate the parts that actually make sense." },
+            ].map((step) => (
+              <div
+                key={step.n}
+                className="group rounded-xl border border-neutral-800 bg-neutral-950/60 p-4 backdrop-blur-sm transition duration-200 hover:-translate-y-px hover:border-neutral-600/80 hover:shadow-[0_4px_24px_rgba(0,0,0,0.4)]"
+              >
+                <div className="mb-2 flex items-baseline gap-2">
+                  <span className="font-mono text-[0.65rem] tracking-wide text-neutral-600">{step.n}.</span>
+                  <h3 className="text-sm font-semibold text-neutral-100">{step.title}</h3>
+                </div>
+                <p className="text-sm leading-relaxed text-neutral-500">{step.body}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -109,25 +117,32 @@ export default function HomePage() {
         <section aria-labelledby="example-heading" className="space-y-4">
           <h2
             id="example-heading"
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400"
+            className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
           >
             Example
           </h2>
 
-          <div className="max-w-2xl rounded-xl border border-neutral-800 bg-neutral-950/60 p-5">
+          <div className="rounded-xl border border-neutral-800 bg-neutral-950/60 p-5 backdrop-blur-sm transition duration-200 hover:-translate-y-px hover:border-neutral-600/80 hover:shadow-[0_4px_24px_rgba(0,0,0,0.4)]">
             <h3 className="text-sm font-semibold text-neutral-100">
               Client Operations — Marketing / Events
             </h3>
 
-            <ul className="mt-3 list-inside space-y-1 text-sm leading-relaxed text-neutral-400">
-              <li>– Managed high-volume inbox with 1,000+ emails per week</li>
-              <li>– Built prioritization and routing system</li>
-              <li>– Coordinated assistants and maintained quality control</li>
-              <li>– Handled client communication, follow-ups, and CRM updates</li>
-              <li>– Managed critical documents including permits, vendor agreements, and registrations</li>
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-neutral-400">
+              {[
+                "Managed high-volume inbox with 1,000+ emails per week",
+                "Built prioritization and routing system",
+                "Coordinated assistants and maintained quality control",
+                "Handled client communication, follow-ups, and CRM updates",
+                "Managed critical documents including permits, vendor agreements, and registrations",
+              ].map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="shrink-0 text-neutral-600">–</span>
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
 
-            <p className="mt-4 text-sm leading-relaxed text-neutral-300">
+            <p className="mt-4 border-t border-neutral-800 pt-3.5 text-sm leading-relaxed text-neutral-300">
               Result: the owner was removed from day-to-day operations while communication,
               follow-up, and execution stayed consistent.
             </p>
@@ -138,12 +153,12 @@ export default function HomePage() {
         <section id="about" aria-labelledby="about-heading" className="space-y-4">
           <h2
             id="about-heading"
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400"
+            className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
           >
             About
           </h2>
 
-          <div className="max-w-2xl space-y-3 text-sm leading-relaxed text-neutral-300">
+          <div className="space-y-3 text-sm leading-relaxed text-neutral-300">
             <p>
               I come from a background in B2B sales and operations, where I have spent years
               dealing with real-world problems: missed follow-ups, messy CRMs, broken
@@ -163,22 +178,22 @@ export default function HomePage() {
         <section id="contact" aria-labelledby="contact-heading" className="space-y-3">
           <h2
             id="contact-heading"
-            className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-400"
+            className="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500"
           >
             Contact
           </h2>
 
-          <div className="max-w-2xl text-sm leading-relaxed text-neutral-300">
+          <div className="text-sm leading-relaxed text-neutral-300">
             <p>
               Email:{" "}
               <a
                 href="mailto:leo@bbstrats.com"
-                className="underline underline-offset-4 hover:text-neutral-100"
+                className="underline underline-offset-4 decoration-neutral-600 hover:text-neutral-100 hover:decoration-neutral-400 transition-colors"
               >
                 leo@bbstrats.com
               </a>
             </p>
-            <p className="mt-2 text-neutral-400">
+            <p className="mt-2 text-neutral-500">
               Send me a quick overview of your current workflow. I will tell you
               what is likely broken and where to start.
             </p>
