@@ -26,9 +26,6 @@ export default function HomePage() {
             <p>
               CRM, intake, follow-up, and communication workflows — with automation where it actually makes sense.
             </p>
-            <p className="font-medium text-neutral-200">
-              Fix broken CRM, intake, and follow-up systems that leak revenue.
-            </p>
             <p>
               If your inbox is overloaded, your CRM is a mess, or things are
               slipping through the cracks, I help you clean it up, make it run properly, and automate the parts that should not be manual.
